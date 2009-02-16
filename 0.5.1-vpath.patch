@@ -1,0 +1,8 @@
+--- origsrc/unshield-0.5.1/src/Makefile.am	2008-05-05 20:38:10.000000000 -0500
++++ src/unshield-0.5.1/src/Makefile.am	2008-09-02 20:44:59.553691300 -0500
+@@ -1,4 +1,4 @@
+-INCLUDES = -I../lib
++INCLUDES = -I$(top_srcdir)/lib
+ LDADD = ../lib/libunshield.la
+ 
+ bin_PROGRAMS = unshield
