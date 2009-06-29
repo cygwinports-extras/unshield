@@ -1,5 +1,5 @@
 category: Archive
-requires: cygwin libunshield0
+requires: libunshield0
 sdesc: "InstallShield Cabinet Files extractor utility"
 ldesc: "The goals of this implementation are;
 - Use a well known open source license (MIT)

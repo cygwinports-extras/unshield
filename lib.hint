@@ -1,5 +1,5 @@
 category: Archive
-requires: cygwin zlib
+requires: zlib
 external-source: unshield
 sdesc: "InstallShield Cabinet Files extractor library (runtime)"
 ldesc: "The goals of this implementation are;
