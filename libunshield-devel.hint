@@ -1,6 +1,7 @@
 category: Archive
-requires: libunshield0
-sdesc: "InstallShield Cabinet Files extractor utility"
+requires: libunshield0 zlib-devel
+external-source: unshield
+sdesc: "InstallShield Cabinet Files extractor library (libdevel)"
 ldesc: "The goals of this implementation are;
 - Use a well known open source license (MIT)
 - Work on both little-endian and big-endian systems

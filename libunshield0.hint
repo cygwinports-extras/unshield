@@ -1,5 +1,5 @@
 category: Archive
-requires: zlib
+requires: libgcc1 zlib0
 external-source: unshield
 sdesc: "InstallShield Cabinet Files extractor library (runtime)"
 ldesc: "The goals of this implementation are;
