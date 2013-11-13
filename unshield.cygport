@@ -1,0 +1,22 @@
+NAME="unshield"
+VERSION=0.6
+RELEASE=1
+CATEGORY="Archive"
+SUMMARY="InstallShield Cabinet Files extractor utility"
+DESCRIPTION="This program allows one to extract the Microsoft Cabinet Files
+from InstallShield Cabinet Files in order to be able to work with them without
+access to Microsoft Windows."
+HOMEPAGE="http://www.synce.org/"
+SRC_URI="mirror://sourceforge/synce/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.5.1-vpath.patch"
+
+PKG_NAMES="${NAME} lib${NAME}0 lib${NAME}-devel"
+unshield_CONTENTS="usr/bin/*.exe usr/share/"
+libunshield0_CATEGORY="Libs"
+libunshield0_SUMMARY=${SUMMARY/utility/library}
+libunshield0_CONTENTS="usr/bin/*-0.dll"
+libunshield_devel_CATEGORY="Libs"
+libunshield_devel_SUMMARY=${libunshield0_SUMMARY}
+libunshield_devel_CONTENTS="usr/include/ usr/lib/"
+
+ACLOCAL_FLAGS="-I m4"
